@@ -1,0 +1,325 @@
+ #navbar{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border: solid 2px transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: white;
+    border-radius: 10px;
+   
+}
+.linksBox{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#count{
+    padding: 0 3px;
+    background-color: #23cf4e;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 20px;
+    position: relative;
+    top: -22px;
+    right: 20px;
+
+}
+
+
+.searchBar{
+    width: 100%;
+    margin: 80px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+input{
+    width: 20%;
+    height: 40px;
+   border: transparent;
+   border-bottom:solid 2px black;
+    outline: none;
+}
+.searchIcon{
+    width: 40px;
+    height: 35px;
+    background-color: #979292;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+.searchIcon>i{
+    color: white;
+     font-weight: 100;
+}
+
+.displaySection{
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.displaySection >.filterSection{
+    width: 30%;
+    height: 95%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.attributeDiv{
+    width: 50%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.attributeDiv> .selectBox{
+    width: 80%;
+    text-align: center;
+    /* border: 1px solid blue; */
+    position: relative;
+    margin-bottom: 7px;
+}
+.attributeDiv>h3{
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.selectBox > label{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+   position: absolute;
+}
+.selectBox > input{
+    width: 15px;
+    height: 15px;
+    margin-left: -85px;
+    background-color: #979292;
+    cursor: pointer;
+}
+
+.displaySection > .productsSection{
+    width: 65%;
+    height: 100%;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 10px;
+     padding: 10px;
+    overflow: auto;
+    
+}
+
+.individual-product{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.individual-product> img{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+.itemDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product_card > .prodTitle{
+    position: absolute;
+    left: 5%;
+    font-family: sans-serif;
+    top: 2%;
+    color: #08345b;
+}
+.itemDetails > button{
+    width: 40%;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: -7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.itemDetails > p{
+    font-weight: bold;
+}
+
+.displayCart{
+    width: 100%;
+    height: 500px;
+   margin-top: 100px;
+}
+.displayCart > h2{
+    font-family: sans-serif;
+    font-size: 19px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.displayCart > .cartItems{
+    width: 50%;
+    height: 80%;
+    margin-left: 13%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+    overflow: auto;
+
+}
+.cartItems> .individualItem{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    margin-bottom: 25px;
+}
+.individualItem>img{
+    width:25%;
+    height: 100%;
+}
+.individualItem >.titleAndPrice{
+    width: 25%;
+    height: 50px;
+    margin-top: 10px;
+    /* border:1px solid rgb(116, 116, 0); */
+}
+.titleAndPrice > p{
+    font-family: sans-serif;
+    font-size: 19px;
+}
+.individualItem>.quantityBox{
+    width: 40%;
+    height: 70px;
+    margin-top: 20px;
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15px;
+   
+  }
+.quantityBox > div{
+    width: 40%;
+     display: flex;
+     justify-content: space-between;
+     gap: 10px;
+     /* border: 1px solid magenta; */
+}
+.quantityBox > button{
+    width: 130px;
+    height: 40px;
+    background-color: #ff3c3c;
+    border-radius: 7px;
+    border:none;
+}
+.incDec > button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color:black;
+    background-color: rgb(255, 217, 0);
+    font-size: 19px;
+}
+button{
+    cursor: pointer;
+}
+.emptyCart > p{
+    font-size: 19px;
+    font-family:monospace;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .displaySection>.productsSection{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 25px;
+    padding: 0px;
+   }
+   .selectBox > input{
+  margin-left: -70%;
+   }
+   .selectBox > label{
+    font-size: 11px;
+   }
+   .attributeDiv{
+    width: 100%;
+   }
+   .attributeDiv>h4{
+    font-size: 15px;
+   }
+   .searchBar{
+    width:  50%;
+    
+   }
+   .displayCart{
+    width: 100%;
+    /* border: 1px solid red; */
+   }
+   .displayCart > .cartItems{
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin: 0px;
+   }
+   .quantityBox > button{
+    width: 60px;
+    height: 30px;
+    margin-top: 8px;
+}
+.incDec{
+    margin-top: 6px;
+}
+.incDec > button{
+    width: 40px;
+    height: 30px;
+    font-size: 19px;
+    margin-top: 3px;
+}
+.titleAndPrice > p{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.titleAndPrice >h4{
+    font-size: 15px;
+}
+empty > p{
+    font-size: 17px;
+}
+.displayCart >p{
+    font-size: 17px;
+}
+
+  }
+
+  
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    .contentDiv >.productsSection{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+   }
+   .selectBox > input{
+  margin-left: -70%;
+   }
+   .selectBox > label{
+    font-size: 15px;
+   }
+   .attributeDiv{
+    width: 100%;
+   }
+   .attributeDiv>h4{
+    font-size: 19px;
+   }
+  }
